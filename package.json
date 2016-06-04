@@ -1,0 +1,32 @@
+{
+  "name": "marshmallow-and-mammy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mike-griffin87/marshmallowandmammy.git"
+  },
+  "author": "Mike Griffin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mike-griffin87/marshmallowandmammy/issues"
+  },
+  "homepage": "https://github.com/mike-griffin87/marshmallowandmammy#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.5"
+  }
+}
