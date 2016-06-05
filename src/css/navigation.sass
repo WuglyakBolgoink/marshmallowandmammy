@@ -1,0 +1,102 @@
+nav
+  width: 70px
+  height: 70px
+  border-radius: 50%
+  background: pink
+  position: absolute
+  top: 1.6em
+  right: 1.5em
+  //transition: all .2s ease-in-out
+
+  @media screen and (max-width: 768px)
+    top: .8em
+
+  .hamburger
+    width: 70px
+    height: 70px
+    top: 1.6em
+    position: relative
+    border-radius: .5em
+    cursor: pointer
+    padding: 0
+    margin: auto
+    display: block
+
+    &.menu-is-showing
+      span
+        background: transparent
+
+      span:after
+        top: -.25em
+        transform: rotate(-45deg)
+      span:before
+        top: 0
+        transform: rotate(45deg)
+
+    span,
+    span:before,
+    span:after
+      content: ""
+      position: relative
+      display: block
+      margin: auto
+      background: #fff
+      width: 2em
+      height: .25em
+      border-radius: .5em
+      transform-origin: center center
+      -webkit-transition: all .25s ease-in-out
+
+    span:before
+      height: .25em
+      display: block
+      top: -.5em
+    span:after
+      height: .25em
+      display: block
+      top: .25em
+
+
+.main-nav
+  text-align: center
+  padding: 1em
+  background: white
+  display: none
+
+  // &.menu-is-showing
+  //   display: block
+  //   opacity: 1
+
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+    li
+      color: $grey
+      font:
+        family: 'Amatic SC', cursive
+        size: 1.4em
+      padding: .25em 0
+
+      @media screen and (max-width: 768px)
+        font-size: 1.8em
+
+      a
+        text-decoration: none
+        transition: all .25s ease-in-out
+        color: $grey
+
+        &:hover
+          color: mediumturquoise
+
+      a.inactive
+        color: lighten($grey, 65%)
+        pointer-events: none
+
+      &.nav-title
+        color: orange
+        font-size: 1em
+        padding-bottom: 0
+
+        @media screen and (max-width: 768px)
+          font-size: 1.4em

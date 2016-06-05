@@ -1,2 +1,2 @@
-
+function MmController(n,e){e.get("trimester-info.json").then(function(e){n.weekPanels=e.data,n.weekTotal=n.weekPanels.length})}angular.module("marshmallowAndMammy",[]).controller("mmController",["$scope","$http",MmController]),$(document).ready(function(){$("nav").on("click",function(){$(".hamburger").toggleClass("menu-is-showing"),$(".main-nav").slideToggle("fast")})});
 //# sourceMappingURL=main.js.map

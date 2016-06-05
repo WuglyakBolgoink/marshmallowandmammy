@@ -1,44 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="marshmallowAndMammy">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marshmallow & Mammy</title>
   <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
+<body ng-controller="mmController">
+
+<nav>
+  <div class="hamburger">
+    <span></span>
+  </div>
+</nav>
+
   <header class="logo-container">
     <h1>Marshmallow & Mammy</h1>
     <h4>Follow along with our pregnancy and see Marshmallow develop</h4>
   </header>
 
+  <div class="main-nav">
+    <ul>
+      <li class="nav-title">First Trimester</li>
+      <li><a href="#">Week 5-8</a></li>
+      <!-- <li><a class="inactive" href="#">Week 9-13</a></li>
+      <li class="nav-title">Second Trimester</li>
+      <li><a class="inactive" href="#">Week 14-17</a></li>
+      <li><a class="inactive" href="#">Week 18-21</a></li>
+      <li><a class="inactive" href="#">Week 22-26</a></li>
+      <li class="nav-title">Third Trimester</li>
+      <li><a class="inactive" href="#">Week 27-30</a></li>
+      <li><a class="inactive" href="#">Week 31-35</a></li>
+      <li><a class="inactive" href="#">Week 36-40</a></li> -->
+    </ul>
+  </div>
+
   <section class="week-section">
-    <div class="week-panel one">
-      one
+
+    <div ng-repeat="weekPanel in weekPanels" class="week-panel {{weekPanel.class}}">
+      <div class="btn {{weekPanel.comingSoon}}">
+        <h2>{{weekPanel.btnTxt1}}<br/>{{weekPanel.btnTxt2}}</h2>
+      </div>
+      <h2>Week {{weekPanel.weeks}}</h2>
+      <h4>{{weekPanel.trimester}}</h4>
     </div>
-    <div class="week-panel two">
-      two
-    </div>
-    <div class="week-panel three">
-      three
-    </div>
-    <div class="week-panel four">
-      four
-    </div>
-    <div class="week-panel five">
-      five
-    </div>
-    <div class="week-panel six">
-      six
-    </div>
-    <div class="week-panel seven">
-      seven
-    </div>
-    <div class="week-panel eight">
-      eight
-    </div>
+
+  </section>
+  <section>
     <div class="sub-panel nine">
-      nine
+      <h2>Find out when we post</h2>
+      <h4>No spam at all (we promise). Just a single email each time we post a new entry.</h4>
+
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+        <div class="sub-container">
+          <form action="//marshmallowandmammy.us12.list-manage.com/subscribe/post?u=b978db77d7aa98fc4de8a0f3e&amp;id=5dc4485057" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group flex flex-center">
+              	<input type="email" value="" name="EMAIL" class="required email" placeholder="Enter your email address" id="mce-EMAIL">
+                <button type="submit" id="mc-embedded-subscribe" name="subscribe" class="send-button">Send</button>
+              </div>
+
+            	<div id="mce-responses" class="clear">
+            		<div class="response" id="mce-error-response" style="display:none"></div>
+            		<div class="response" id="mce-success-response" style="display:none"></div>
+            	</div>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b978db77d7aa98fc4de8a0f3e_5dc4485057" tabindex="-1" value=""></div>
+              </div>
+          </form>
+        </div>
+      </div><!--End mc_embed_signup-->
+
+      <img src="/img/marshmallow-icon.png" alt="marshmallow">
+
     </div>
   </section>
 

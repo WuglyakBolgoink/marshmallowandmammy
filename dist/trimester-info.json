@@ -1,0 +1,73 @@
+[
+  {
+    "class"     : "one",
+    "btnTxt1"   : "View",
+    "btnTxt2"   : "Diary",
+    "weeks"     : "5-8",
+    "trimester" : "First Trimester"
+  },
+
+  {
+    "class"     : "two",
+    "btnTxt1"   : "Coming",
+    "btnTxt2"   : "Soon",
+    "weeks"     : "9-13",
+    "trimester" : "First Trimester",
+    "comingSoon": "coming-soon"
+  },
+
+  {
+    "class"     : "three",
+    "btnTxt1"   : "Coming",
+    "btnTxt2"   : "Soon",
+    "weeks"     : "14-17",
+    "trimester" : "Second Trimester",
+    "comingSoon": "coming-soon"
+  },
+
+  {
+    "class"     : "four",
+    "btnTxt1"   : "Coming",
+    "btnTxt2"   : "Soon",
+    "weeks"     : "18-21",
+    "trimester" : "Second Trimester",
+    "comingSoon": "coming-soon"
+  },
+
+  {
+    "class"     : "five",
+    "btnTxt1"   : "Coming",
+    "btnTxt2"   : "Soon",
+    "weeks"     : "22-26",
+    "trimester" : "Second Trimester",
+    "comingSoon": "coming-soon"
+  },
+
+  {
+    "class"     : "six",
+    "btnTxt1"   : "Coming",
+    "btnTxt2"   : "Soon",
+    "weeks"     : "27-30",
+    "trimester" : "Third Trimester",
+    "comingSoon": "coming-soon"
+  },
+
+  {
+    "class"     : "seven",
+    "btnTxt1"   : "Coming",
+    "btnTxt2"   : "Soon",
+    "weeks"     : "31-35",
+    "trimester" : "Third Trimester",
+    "comingSoon": "coming-soon"
+  },
+
+  {
+    "class"     : "eight",
+    "btnTxt1"   : "Coming",
+    "btnTxt2"   : "Soon",
+    "weeks"     : "36-40",
+    "trimester" : "Third Trimester",
+    "comingSoon": "coming-soon"
+  }
+
+]

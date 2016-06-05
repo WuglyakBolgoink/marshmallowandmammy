@@ -1,7 +1,9 @@
 .logo-container
   text-align: center
+  display: block
   background: white
   padding: 1em 0
+  z-index: 2
 
   h1
     color: $grey
@@ -11,7 +13,11 @@
 
   h4
     color: lighten($grey, 20%)
+    margin: 0 1.8em
     font:
       family: 'Open Sans', sans-serif
       weight: 100
       size: .8em
+
+  @media screen and (max-width: 768px)
+    margin-top: 4em

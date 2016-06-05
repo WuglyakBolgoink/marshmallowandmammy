@@ -1,23 +1,71 @@
 .week-section
   display: flex
+  flex-direction: row
   flex-wrap: wrap
 
 .week-panel
   display: flex
   justify-content: center
   align-items: center
+  flex-direction: column
   width: 50%
   height: 400px
 
-.sub-panel
+
+  &:hover
+    .btn
+      transform: scale(1.3)
+
+  h2
+    color: white
+    font:
+      family: 'Amatic SC', cursive
+      size: 2.25em
+
+  h4
+    color: white
+    margin: .5em 0 0 0
+    font:
+      family: 'Open Sans', sans-serif
+      weight: 400
+      size: .84em
+
+  @media screen and (max-width: 768px)
+    width: 100%
+
+.btn
+  background: white
+  width: 115px
+  height: 115px
+  border-radius: 50%
   display: flex
   justify-content: center
   align-items: center
-  width: 100%
-  height: 500px
+  margin: 1.5em 0
+  box-shadow: 0px 2px 10px rgba($grey, .3)
+  transition: all .2s ease-in-out
+  cursor: pointer
+
+  &:hover
+    background: $grey
+    box-shadow: 0px 3px 12px rgba(white, .4)
+    transform: scale(1.2)!important
+
+  h2
+    text-align: center
+    color: pink
+    line-height: 1em
+    font:
+      family: 'Amatic SC', cursive
+      size: 1.8em
+
+.coming-soon
+  cursor: default
 
 .one
   background: lightskyblue
+  &:hover
+    background: darken(lightskyblue, 12%)
 
 .two
   background: orange

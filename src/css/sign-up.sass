@@ -1,0 +1,79 @@
+.sub-panel
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 2.5em 0
+  width: 100%
+  text-align: center
+
+  img
+    width: 7%
+    height: auto
+
+    @media screen and (max-width: 768px)
+      width: 20%
+
+    @media screen and (max-width: 400px)
+      width: 50%
+
+  h2
+    color: white
+    font:
+      family: 'Amatic SC', cursive
+      size: 2.25em
+
+  h4
+    color: $grey
+    margin: .5em 0 0 0
+    padding: 0 1em
+    font:
+      family: 'Open Sans', sans-serif
+      weight: 400
+      size: .84em
+
+
+#mc_embed_signup
+  padding: 1em 0
+  margin: 1em 0 .5em 0
+  width: 100%
+  left: 0
+
+.sub-container
+  width: 100%
+  margin: 2.5em 0
+
+  button, input
+    border: 0
+    height: 3em
+    font-size: .9em
+
+  input
+    width: 30%
+    text-align: center
+    color: $grey
+
+    @media screen and (max-width: 768px)
+      width: 65%
+
+    &:focus
+      outline: none
+
+  button
+    box-sizing: content-box
+    padding: .3em .1em
+    width: 12%
+    text-transform: uppercase
+    color: $grey
+    cursor: pointer
+    transition: all .25s ease-in-out
+    font:
+      family: 'Open Sans', sans-serif
+      weight: 300
+
+    &:hover
+      color: white
+      background: mediumturquoise
+
+    @media screen and (max-width: 768px)
+      width: 25%
