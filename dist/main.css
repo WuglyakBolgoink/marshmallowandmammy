@@ -47,6 +47,10 @@ h4 {
   font-family: 'Amatic SC', cursive;
   font-size: 3.25em; }
 
+.logo-container h1 a {
+  text-decoration: none;
+  color: #333; }
+
 .logo-container h4 {
   color: #666666;
   margin: 0 1.8em;
@@ -370,11 +374,32 @@ nav .hamburger span:after {
 .header-container {
   background: lightskyblue;
   width: 100%;
-  padding: 4em 2em; }
+  padding: 4em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+@media screen and (max-width: 700px) {
+  .header-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center; } }
 
 .header-container header {
   width: 50%;
   text-align: center; }
+
+@media screen and (max-width: 700px) {
+  .header-container header {
+    width: 90%; } }
 
 .header-container header h1, .header-container header h4 {
   color: white;
@@ -384,8 +409,17 @@ nav .hamburger span:after {
 .header-container header h4 {
   font-size: 2em; }
 
+@media screen and (max-width: 700px) {
+  .header-container header h4 {
+    font-size: 1.2em; } }
+
 .header-container .header-intro {
   width: 50%; }
+
+@media screen and (max-width: 700px) {
+  .header-container .header-intro {
+    margin-top: 1.5em;
+    width: 96%; } }
 
 .header-container .header-intro h2 {
   color: white;
@@ -399,16 +433,26 @@ nav .hamburger span:after {
   font-weight: 300;
   font-size: .8em; }
 
-.post-content {
+.main-content {
   width: 70%;
+  margin: 0 auto;
+  display: block;
+  position: relative; }
+
+@media screen and (max-width: 700px) {
+  .main-content {
+    width: 90%; } }
+
+.post-image {
+  width: 100%;
   margin: 0 auto;
   margin-top: -1.5em;
   display: block;
   position: relative;
   z-index: 2; }
 
-.post-content:after {
-  content: 'week';
+.post-image:before {
+  content: attr(data-caption);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,8 +463,29 @@ nav .hamburger span:after {
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 0em;
+  left: 0em;
+  padding: .6em 1.2em;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 3;
+  color: #333;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.6em; }
+
+.post-image:after {
+  content: attr(data-week);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: -1em;
+  right: -1em;
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -429,5 +494,40 @@ nav .hamburger span:after {
   color: white;
   font-family: 'Amatic SC', cursive;
   font-size: 1.3em; }
+
+@media screen and (max-width: 480px) {
+  .post-image:after {
+    width: 60px;
+    height: 60px;
+    font-size: 1.1em;
+    bottom: -.5em;
+    right: -.5em; } }
+
+.tri-circle-img {
+  margin: 3em 0;
+  display: block;
+  position: relative;
+  width: 100%; }
+
+.content-text {
+  margin-bottom: 5em; }
+
+.content-text h1 {
+  text-align: center;
+  color: #333;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.3em; }
+
+.content-text p {
+  color: #8c8c8c;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: .8em; }
+
+.content-text .underline {
+  width: 80%;
+  margin: 0 auto;
+  height: .2em;
+  background: lightskyblue; }
 
 /*# sourceMappingURL=main.css.map */
