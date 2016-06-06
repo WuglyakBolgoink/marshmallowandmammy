@@ -367,4 +367,67 @@ nav .hamburger span:after {
   .main-nav ul li.nav-title {
     font-size: 1.4em; } }
 
+.header-container {
+  background: lightskyblue;
+  width: 100%;
+  padding: 4em 2em; }
+
+.header-container header {
+  width: 50%;
+  text-align: center; }
+
+.header-container header h1, .header-container header h4 {
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 5em; }
+
+.header-container header h4 {
+  font-size: 2em; }
+
+.header-container .header-intro {
+  width: 50%; }
+
+.header-container .header-intro h2 {
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em; }
+
+.header-container .header-intro p {
+  color: #333;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: .8em; }
+
+.post-content {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: -1.5em;
+  display: block;
+  position: relative;
+  z-index: 2; }
+
+.post-content:after {
+  content: 'week';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: lightskyblue;
+  z-index: 3;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.3em; }
+
 /*# sourceMappingURL=main.css.map */

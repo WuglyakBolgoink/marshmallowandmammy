@@ -1,0 +1,58 @@
+.header-container
+  background: lightskyblue
+  width: 100%
+  padding: 4em 2em
+
+  header
+    width: 50%
+    text-align: center
+
+    h1, h4
+      color: white
+      font:
+        family: 'Amatic SC', cursive
+        size: 5em
+
+    h4
+      font-size: 2em
+
+  .header-intro
+    width: 50%
+    h2
+      color: white
+      font:
+        family: 'Amatic SC', cursive
+        size: 2em
+    p
+      color: $grey
+      margin: 0
+      font:
+        family: 'Open Sans', sans-serif
+        weight: 300
+        size: .8em
+
+.post-content
+  width: 70%
+  margin: 0 auto
+  margin-top: -1.5em
+  display: block
+  position: relative
+  z-index: 2
+
+  &:after
+    content: 'week'
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 80px
+    height: 80px
+    border-radius: 50%
+    background: lightskyblue
+    z-index: 3
+    color: white
+    font:
+      family: 'Amatic SC', cursive
+      size: 1.3em

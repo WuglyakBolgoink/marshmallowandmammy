@@ -1,5 +1,9 @@
-angular.module('marshmallowAndMammy',[])
-.controller('mmController', ['$scope', '$http', MmController]);
+angular.module('marshmallowAndMammy',['ngRoute'])
+.controller('mmController', ['$scope', '$http', MmController])
+.config(function($routeProvider){
+  $routeProvider.
+    when("/", {templateUrl:"/partials/homepage.html"});
+});
 
 function MmController ($scope, $http){
   $http.get('trimester-info.json').then(function(trimesterData){
