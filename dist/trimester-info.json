@@ -1,5 +1,6 @@
 [
   {
+    "path"      : "/weeks5-8.html",
     "class"     : "one",
     "btnTxt1"   : "View",
     "btnTxt2"   : "Diary",
@@ -8,6 +9,7 @@
   },
 
   {
+    "path"      : "inactive",
     "class"     : "two",
     "btnTxt1"   : "Coming",
     "btnTxt2"   : "Soon",
@@ -17,6 +19,7 @@
   },
 
   {
+    "path"      : "inactive",
     "class"     : "three",
     "btnTxt1"   : "Coming",
     "btnTxt2"   : "Soon",
@@ -26,6 +29,7 @@
   },
 
   {
+    "path"      : "inactive",
     "class"     : "four",
     "btnTxt1"   : "Coming",
     "btnTxt2"   : "Soon",
@@ -35,6 +39,7 @@
   },
 
   {
+    "path"      : "inactive",
     "class"     : "five",
     "btnTxt1"   : "Coming",
     "btnTxt2"   : "Soon",
@@ -44,6 +49,7 @@
   },
 
   {
+    "path"      : "inactive",
     "class"     : "six",
     "btnTxt1"   : "Coming",
     "btnTxt2"   : "Soon",
@@ -53,6 +59,7 @@
   },
 
   {
+    "path"      : "inactive",
     "class"     : "seven",
     "btnTxt1"   : "Coming",
     "btnTxt2"   : "Soon",
@@ -62,6 +69,7 @@
   },
 
   {
+    "path"      : "inactive",
     "class"     : "eight",
     "btnTxt1"   : "Coming",
     "btnTxt2"   : "Soon",
