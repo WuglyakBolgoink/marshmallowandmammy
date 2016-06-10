@@ -5,10 +5,12 @@ angular.module('marshmallowAndMammy',['ngRoute'])
     when("/", {templateUrl:"/partials/homepage.html"}).
     when("/weeks5-8.html", {templateUrl:"/partials/week5-8.html"});
 
-    $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
-    });
+    $locationProvider.html5Mode(true);
+
+    // $locationProvider.html5Mode({
+    //   enabled: true,
+    //   requireBase: false
+    // });
 
 }]);
 

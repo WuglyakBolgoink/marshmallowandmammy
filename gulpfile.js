@@ -7,6 +7,8 @@ var browserSync  = require('browser-sync');
 var htmlmin      = require('gulp-htmlmin');
 var sourcemaps   = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
+var historyApiFallback = require('connect-history-api-fallback');
+
 
 
 
@@ -33,7 +35,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('html', function(){
-  return gulp.src('src/*.html')
+  return gulp.src(['src/index.html', 'src/partials/*.html'], {base: './src/'})
   .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest('dist'))
   .pipe(browserSync.stream());
@@ -42,10 +44,11 @@ gulp.task('html', function(){
 gulp.task('browserSync', function() {
   browserSync({
     server: {
-      baseDir: 'dist/'
+      baseDir: './dist/',
+      middleware: [ historyApiFallback() ]
     }
   });
-    gulp.watch('src/*.html', ['html']);
+    gulp.watch('src/**/*.html', ['html']);
     gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch(['src/css/*.sass', 'src/css/*.scss'], ['sass']);
 });
