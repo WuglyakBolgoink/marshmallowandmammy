@@ -7,11 +7,6 @@ angular.module('marshmallowAndMammy',['ngRoute'])
 
     $locationProvider.html5Mode(true);
 
-    // $locationProvider.html5Mode({
-    //   enabled: true,
-    //   requireBase: false
-    // });
-
 }]);
 
 function MmController ($scope, $http, $location){
@@ -31,4 +26,12 @@ function MmController ($scope, $http, $location){
     $('.hamburger').toggleClass('menu-is-showing');
   };
 
-}
+}//MmControler Close
+
+$(document).ready(function(){
+  $('.img-swap').on('click', function(){
+    console.log('hello');
+  });
+console.log('ready');
+
+});

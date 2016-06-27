@@ -57,13 +57,14 @@
     width: 90%
 
 
-.post-image
-  width: 100%
+.image-100
   margin: 0 auto
   margin-top: -1.5em
   display: block
   position: relative
   z-index: 2
+
+.caption
 
   &:before
     content: attr(data-caption)
@@ -84,6 +85,8 @@
     @media screen and (max-width: 700px)
       padding: .4em .8em
       font-size: .8em
+
+.week-info
 
   &:after
     content: attr(data-week)
@@ -118,12 +121,9 @@
 
 .content-text
   margin-bottom: 5em
-  h1
+  h2
     text-align: center
     color: $grey
-    font:
-      family: 'Amatic SC', cursive
-      size: 2.3em
 
   p
     color: lighten($grey, 35%)
@@ -132,8 +132,12 @@
       weight: 300
       size: .8em
 
-  .underline
-    width: 80%
-    margin: 0 auto
-    height: .2em
-    background: lightskyblue
+.underline
+  width: 80%
+  margin: 0 auto
+  height: .2em
+  display: block
+  background: lightskyblue
+
+.week-7
+  margin-bottom: 5rem
