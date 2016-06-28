@@ -3,7 +3,7 @@ angular.module('marshmallowAndMammy',['ngRoute'])
 .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
   $routeProvider.
     when("/", {templateUrl:"/partials/homepage.html"}).
-    when("/weeks5-8.html", {templateUrl:"/partials/week5-8.html"});
+    when("/weeks5-8", {templateUrl:"/partials/week5-8.html"});
 
     $locationProvider.html5Mode(true);
 
