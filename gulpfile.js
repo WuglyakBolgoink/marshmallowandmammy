@@ -44,7 +44,7 @@ gulp.task('html', function(){
 gulp.task('browserSync', function() {
   browserSync({
     server: {
-      baseDir: './dist/',
+      baseDir: ['dist/'],
       middleware: [ historyApiFallback() ]
     }
   });
