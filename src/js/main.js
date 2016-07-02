@@ -3,8 +3,8 @@ angular.module('marshmallowAndMammy',['ngRoute'])
 .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
   $routeProvider.
     when("/", {templateUrl:"/partials/homepage.html"}).
-    when("/weeks5-8", {templateUrl:"/partials/week5-8.html"});
-
+    when("/weeks5-8", {templateUrl:"/partials/week5-8.html"}).
+    when("/weeks9-13", {templateUrl:"/partials/week9-13.html"});
     $locationProvider.html5Mode(true);
 
 }]);
@@ -29,9 +29,8 @@ function MmController ($scope, $http, $location){
 }//MmControler Close
 
 $(document).ready(function(){
-  $('.img-swap').on('click', function(){
-    console.log('hello');
+  $('.press-me').on('click', function(){
+    $(this).toggleClass('press-me-pressed');
   });
-console.log('ready');
 
 });

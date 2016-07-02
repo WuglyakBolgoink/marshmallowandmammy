@@ -6,8 +6,9 @@ angular.module('marshmallowAndMammy').directive('imageSwap', function(){
       imageSrc2: '@imageSrc2'
     },
     link: function(scope, elm, attr){
-      
+
       elm.on('click', function(){
+        $(this).siblings('.press-me').toggleClass('press-me-pressed');
         if(elm.attr('src') === scope.imageSrc2){
           elm.attr('src', scope.imageSrc1);
         } else {

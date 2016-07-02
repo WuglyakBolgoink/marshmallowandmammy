@@ -1,5 +1,4 @@
 .header-container
-  background: lightskyblue
   width: 100%
   padding: 4em 2em
   display: flex
@@ -51,7 +50,6 @@
   width: 70%
   margin: 0 auto
   display: block
-  position: relative
 
   @media screen and (max-width: 700px)
     width: 90%
@@ -132,12 +130,27 @@
       weight: 300
       size: .8em
 
-.underline
-  width: 80%
-  margin: 0 auto
-  height: .2em
-  display: block
-  background: lightskyblue
-
 .week-7
   margin-bottom: 5rem
+
+.post-image
+  position: relative
+
+.press-me
+  position: absolute
+  width: 8rem
+  height: 8rem
+  background: rgba($grey, .75)
+  color: white
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  top: calc(50% - 8rem / 2)
+  left: calc(50% - 8rem / 2)
+  opacity: .9
+  pointer-events: none
+  transition: all .3s ease-in-out
+
+  &.press-me-pressed
+    opacity: 0
