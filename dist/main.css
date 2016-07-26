@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+.blue {
+  background: lightskyblue; }
+
+.orange {
+  background: orange; }
+
 html {
   box-sizing: border-box; }
 
@@ -24,6 +30,22 @@ h1, h4, h2, h3 {
 h4 {
   margin: 0;
   padding: 0; }
+
+p {
+  color: #333;
+  margin: .5rem 0;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9rem;
+  -webkit-font-smoothing: antialiased; }
+
+.img-status-title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3.2rem;
+  -webkit-font-smoothing: antialiased; }
 
 a {
   text-decoration: none; }
@@ -51,9 +73,32 @@ a {
   -ms-grid-row-align: center;
   align-items: center; }
 
+.img-flex-end, .flex-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center; }
+
+@media screen and (max-width: 560px) {
+  .img-flex-end {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
+.wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
 .col-50 {
   width: 50%;
-  padding: 0 .5rem; }
+  position: relative; }
+
+@media screen and (max-width: 560px) {
+  .col-50 {
+    width: 100%; } }
 
 img {
   width: 100%;
@@ -77,13 +122,49 @@ img {
   font-size: .8rem; }
 
 .overflow-container {
-  height: 3rem;
   width: 100%;
-  background: plum; }
+  padding: 2rem 0;
+  margin: 2rem 0;
+  color: white;
+  text-align: center; }
 
-.new-div {
-  clear: left;
-  display: block; }
+.week-status {
+  text-align: center;
+  margin-bottom: 5rem; }
+
+.week-status img {
+  width: 25%;
+  height: auto;
+  margin: 1rem 0;
+  -webkit-filter: drop-shadow(0px 0px 0.2rem rgba(51, 51, 51, 0.5));
+  filter: drop-shadow(0px 0px 0.2rem rgba(51, 51, 51, 0.5)); }
+
+.full-left {
+  background: green;
+  height: 20rem;
+  background-image: url("/img/week9-13/first-night-out.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.full-right {
+  background: pink;
+  height: 20rem;
+  background-image: url("/img/week9-13/andy-orla.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.caption-two {
+  padding: .6rem 1.2rem;
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  color: #333;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.6em; }
+
+.section-spacing {
+  padding: 5rem 0; }
 
 .logo-container {
   text-align: center;
@@ -479,34 +560,26 @@ nav .hamburger span:after {
 .header-container header h1, .header-container header h4 {
   color: white;
   font-family: 'Amatic SC', cursive;
-  font-size: 5em; }
+  font-size: 4rem; }
 
 .header-container header h4 {
-  font-size: 2em; }
+  font-size: 2rem; }
 
 @media screen and (max-width: 700px) {
   .header-container header h4 {
-    font-size: 1.2em; } }
+    font-size: 1.2rem; } }
 
 .header-container .header-intro {
   width: 50%; }
 
 @media screen and (max-width: 700px) {
   .header-container .header-intro {
-    margin-top: 1.5em;
+    margin-top: 1.5rem;
     width: 96%; } }
 
 .header-container .header-intro h2 {
   color: white;
-  font-family: 'Amatic SC', cursive;
-  font-size: 2em; }
-
-.header-container .header-intro p {
-  color: #333;
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: .8em; }
+  font-family: 'Amatic SC', cursive; }
 
 .main-content {
   width: 70%;
@@ -519,7 +592,7 @@ nav .hamburger span:after {
 
 .image-100 {
   margin: 0 auto;
-  margin-top: -1.5em;
+  margin-top: -1.5rem;
   display: block;
   position: relative;
   z-index: 2; }
@@ -536,9 +609,9 @@ nav .hamburger span:after {
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  bottom: 0em;
-  left: 0em;
-  padding: .6em 1.2em;
+  bottom: 0rem;
+  left: 0rem;
+  padding: .6rem 1.2rem;
   background: rgba(255, 255, 255, 0.75);
   z-index: 3;
   color: #333;
@@ -548,7 +621,8 @@ nav .hamburger span:after {
 @media screen and (max-width: 700px) {
   .caption:before {
     padding: .4em .8em;
-    font-size: .8em; } }
+    background: rgba(255, 255, 255, 0.85);
+    font-size: 1.2rem; } }
 
 .week-info:after {
   content: attr(data-week);
@@ -587,18 +661,13 @@ nav .hamburger span:after {
   position: relative;
   width: 100%; }
 
-.content-text {
-  margin-bottom: 5em; }
-
-.content-text h2 {
+.text-section h2 {
   text-align: center;
   color: #333; }
 
-.content-text p {
+.text-section p {
   color: #8c8c8c;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: .8em; }
+  font-weight: 300; }
 
 .week-7 {
   margin-bottom: 5rem; }
@@ -631,5 +700,8 @@ nav .hamburger span:after {
 
 .press-me.press-me-pressed {
   opacity: 0; }
+
+.circle-image-right {
+  width: 80%; }
 
 /*# sourceMappingURL=main.css.map */
