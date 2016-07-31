@@ -6,3 +6,4 @@ node_modules
 /dist/main.css.map
 src/css/main.css.map
 /design
+*.psd

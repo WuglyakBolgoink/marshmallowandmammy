@@ -10,7 +10,9 @@ angular.module('marshmallowAndMammy',['ngRoute'])
 }]);
 
 function MmController ($scope, $http, $location){
+  console.log('loading');
   $http.get('trimester-info.json').then(function(trimesterData){
+    console.log('done');
     $scope.weekPanels = trimesterData.data;
     $scope.weekTotal = $scope.weekPanels.length;
   }, function(e){console.log(e.data);});
@@ -29,6 +31,7 @@ function MmController ($scope, $http, $location){
 }//MmControler Close
 
 $(document).ready(function(){
+
   $('.press-me').on('click', function(){
     $(this).toggleClass('press-me-pressed');
   });

@@ -9,10 +9,9 @@
   },
 
   {
-    "path"      : "weeks9-13",
     "class"     : "two",
-    "btnTxt1"   : "View",
-    "btnTxt2"   : "Diary",
+    "btnTxt1"   : "Coming",
+    "btnTxt2"   : "Soon",
     "weeks"     : "9-13",
     "trimester" : "First Trimester"
   },

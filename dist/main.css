@@ -680,7 +680,6 @@ nav .hamburger span:after {
   width: 8rem;
   height: 8rem;
   background: rgba(51, 51, 51, 0.75);
-  color: white;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -697,6 +696,9 @@ nav .hamburger span:after {
   pointer-events: none;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out; }
+
+.press-me h2 {
+  color: white; }
 
 .press-me.press-me-pressed {
   opacity: 0; }
