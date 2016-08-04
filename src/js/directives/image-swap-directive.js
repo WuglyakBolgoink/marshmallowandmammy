@@ -1,4 +1,4 @@
-angular.module('marshmallowAndMammy').directive('imageSwap', function(){
+angular.module('core').directive('imageSwap', function(){
   return {
     restrict: 'A',
     scope: {
