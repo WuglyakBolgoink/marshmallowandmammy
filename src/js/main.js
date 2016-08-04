@@ -1,4 +1,4 @@
-angular.module('marshmallowAndMammy',['ngRoute'])
+angular.module('marshmallowAndMammy',['ngRoute', 'core'])
 .controller('mmController', ['$scope', '$http', '$location', MmController])
 .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
   $routeProvider.
