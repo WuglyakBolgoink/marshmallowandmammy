@@ -96,6 +96,13 @@ a {
   width: 50%;
   position: relative; }
 
+.col-50 h2, .col-50 p {
+  text-align: left !important; }
+
+@media screen and (max-width: 560px) {
+  .col-50 h2, .col-50 p {
+    text-align: center !important; } }
+
 @media screen and (max-width: 560px) {
   .col-50 {
     width: 100%; } }
@@ -165,6 +172,26 @@ img {
 
 .section-spacing {
   padding: 5rem 0; }
+
+.color-red {
+  color: tomato; }
+
+audio {
+  width: 50%;
+  margin: 1rem 25%; }
+
+@media screen and (max-width: 560px) {
+  audio {
+    width: 100%;
+    margin: 1rem 0; } }
+
+audio::-webkit-media-controls-panel {
+  height: 3rem;
+  background: lightskyblue; }
+
+audio::-webkit-media-controls-play-button {
+  width: 55px;
+  height: 55px; }
 
 .logo-container {
   text-align: center;
@@ -703,7 +730,16 @@ nav .hamburger span:after {
 .press-me.press-me-pressed {
   opacity: 0; }
 
-.circle-image-right {
+.image-right {
   width: 80%; }
+
+.fb-like-img {
+  display: block;
+  width: 30%;
+  margin: 0 auto 2.5rem auto; }
+
+.first-outfit {
+  -webkit-filter: drop-shadow(3px 3px 5px rgba(51, 51, 51, 0.5));
+  filter: drop-shadow(3px 3px 5px rgba(51, 51, 51, 0.5)); }
 
 /*# sourceMappingURL=main.css.map */
