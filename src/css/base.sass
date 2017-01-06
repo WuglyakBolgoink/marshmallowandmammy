@@ -7,6 +7,15 @@ $grey: #333
 .orange
   background: orange
 
+.tomato
+  background: tomato
+
+.pink
+  background: pink
+
+.peachpuff
+  background: peachpuff
+
 
 
 html
@@ -79,6 +88,15 @@ a
   align-items: center
 
 .img-flex-end
+
+  &.with-caption
+    flex-direction: column
+
+    p
+      font:
+        size: 14px
+        weight: bold
+
   @media screen and (max-width: 560px)
     justify-content: center
 
@@ -96,6 +114,13 @@ a
       text-align: center!important
 
   @media screen and (max-width: 560px)
+    width: 100%
+
+.col-33
+  width: 33.33%
+  position: relative
+
+  @media screen and (max-width: 968px)
     width: 100%
 
 img

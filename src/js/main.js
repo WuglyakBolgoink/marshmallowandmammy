@@ -4,7 +4,10 @@ angular.module('marshmallowAndMammy',['ngRoute', 'core'])
   $routeProvider.
     when("/", {templateUrl:"/partials/homepage.html"}).
     when("/weeks5-8", {templateUrl:"/partials/week5-8.html"}).
-    when("/weeks9-13", {templateUrl:"/partials/week9-13.html"});
+    when("/weeks9-13", {templateUrl:"/partials/week9-13.html"}).
+    when("/weeks14-17", {templateUrl:"/partials/week14-17.html"}).
+    when("/weeks18-21", {templateUrl:"/partials/week18-21.html"}).
+    when("/weeks22-26", {templateUrl:"/partials/week22-26.html"});
     $locationProvider.html5Mode(true);
 
 }]);

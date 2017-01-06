@@ -18,21 +18,21 @@
   },
 
   {
+    "path"      : "weeks14-17",
     "class"     : "three",
-    "btnTxt1"   : "Coming",
-    "btnTxt2"   : "Soon",
+    "btnTxt1"   : "View",
+    "btnTxt2"   : "Diary",
     "weeks"     : "14-17",
-    "trimester" : "Second Trimester",
-    "comingSoon": "coming-soon"
+    "trimester" : "Second Trimester"
   },
 
   {
+    "path"      : "weeks18-21",
     "class"     : "four",
-    "btnTxt1"   : "Coming",
-    "btnTxt2"   : "Soon",
+    "btnTxt1"   : "View",
+    "btnTxt2"   : "Diary",
     "weeks"     : "18-21",
-    "trimester" : "Second Trimester",
-    "comingSoon": "coming-soon"
+    "trimester" : "Second Trimester"
   },
 
   {
