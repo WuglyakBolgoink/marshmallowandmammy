@@ -36,13 +36,13 @@
   },
 
   {
+    "path"      : "weeks22-26",
     "class"     : "five",
-    "btnTxt1"   : "Coming",
-    "btnTxt2"   : "Soon",
+    "btnTxt1"   : "View",
+    "btnTxt2"   : "Diary",
     "weeks"     : "22-26",
-    "trimester" : "Second Trimester",
-    "comingSoon": "coming-soon"
-  },
+    "trimester" : "Second Trimester"
+    },
 
   {
     "class"     : "six",

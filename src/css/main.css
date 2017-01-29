@@ -12,8 +12,8 @@
 .pink {
   background: pink; }
 
-.peachpuff {
-  background: peachpuff; }
+.burlyWood {
+  background: burlyWood; }
 
 html {
   box-sizing: border-box; }
@@ -272,6 +272,7 @@ audio::-webkit-media-controls-play-button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  text-align: center;
   width: 50%;
   height: 400px;
   cursor: pointer; }
@@ -285,11 +286,13 @@ audio::-webkit-media-controls-play-button {
   transform: scale(1.3); }
 
 .week-panel h2 {
+  text-align: center;
   color: white;
   font-family: 'Amatic SC', cursive;
   font-size: 2.25em; }
 
 .week-panel h4 {
+  text-align: center;
   color: white;
   margin: .5em 0 0 0;
   font-family: 'Open Sans', sans-serif;
@@ -363,7 +366,7 @@ audio::-webkit-media-controls-play-button {
   transition: all .3s ease-in-out; }
 
 .five {
-  background: peachpuff;
+  background: burlyWood;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out; }
 
